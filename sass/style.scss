@@ -1,0 +1,26 @@
+//Use variables, functions
+@use 'abstracts/functions';
+@use 'abstracts/variables';
+
+// use reset, typography
+@use 'base/reset';
+@use 'base/typography';
+
+//use buttons, carousel, slider
+@use 'components/buttons';
+@use 'components/carousel';
+@use 'components/slider';
+
+// use footer, forms, header, navigation, sidebar
+@use 'layout/footer';
+@use 'layout/forms';
+@use 'layout/header';
+@use 'layout/navigation';
+@use 'layout/sidebar';
+
+// use home
+@use 'pages/home';
+
+// use admin, theme
+@use 'themes/admin';
+@use 'themes/theme';
