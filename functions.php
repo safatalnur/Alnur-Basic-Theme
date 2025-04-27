@@ -16,3 +16,20 @@ function alnur_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'alnur_scripts');
+
+/*
+    ==================
+    Activate Menus
+    ==================
+*/
+
+// Add Menu function to admin panel
+function alnur_basic_theme_setup() {
+    add_theme_support('menus');
+    register_nav_menus(array(
+        'primary'   => 'Primary Header Navigation',
+        'footer'    => 'Main Footer'
+    ));
+}
+
+add_action('init', 'alnur_basic_theme_setup');
