@@ -13,6 +13,8 @@ function alnur_scripts() {
 
     //enqueue custom javascript
     wp_enqueue_script('alnur_js', get_template_directory_uri().'/assets/js/alnurjs.js', array('jquery'), '1.0.0', true);
+    //Font awesome script
+    wp_enqueue_script('alnur-fontawesome', 'https://kit.fontawesome.com/11d88d03e3.js', array('jquery'), '1.0.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'alnur_scripts');

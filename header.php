@@ -10,4 +10,4 @@
     <?php wp_nav_menu(array(
         'theme_location'  => 'primary'
     ));?>
-    <p>This is the heading section</p>
+    <p>This is the heading section<i class="fa-solid fa-user"></i></p>
