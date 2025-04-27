@@ -1,3 +1,15 @@
+#main-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  list-style: none;
+}
 
+@media only screen and (max-width: 991px) {
+  #main-menu {
+    flex-direction: column;
+    gap: 0;
+  }
+}
 
 /*# sourceMappingURL=alnurstyle.css.map */
