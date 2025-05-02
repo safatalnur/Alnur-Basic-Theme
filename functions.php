@@ -40,3 +40,37 @@ function alnur_basic_theme_setup() {
 }
 
 add_action('init', 'alnur_basic_theme_setup');
+
+/*
+    ==================
+    ADebug and find out hook used on a page
+    ==================
+*/
+// if ( is_admin() || ( is_user_logged_in() && current_user_can('manage_options') ) ) {
+
+//     // Keywords to match against hook names (edit as needed)
+//     $hook_filter_keywords = ['header', 'footer', 'template', 'enqueue', 'init'];
+
+//     $GLOBALS['myplugin_filtered_hooks'] = [];
+
+//     add_action('all', function($hook_name) use ($hook_filter_keywords) {
+//         foreach ( $hook_filter_keywords as $keyword ) {
+//             if ( stripos($hook_name, $keyword) !== false ) {
+//                 $GLOBALS['myplugin_filtered_hooks'][] = $hook_name;
+//                 break;
+//             }
+//         }
+//     });
+
+//     add_action('wp_footer', function() {
+//         $unique_hooks = array_unique($GLOBALS['myplugin_filtered_hooks']);
+//         if ( empty($unique_hooks) ) return;
+
+//         echo '<div style="background: #fff; padding: 20px; border: 3px solid #333; margin: 20px; font-family: monospace; font-size: 12px; z-index: 9999;">';
+//         echo '<h2>Filtered Hooks Running:</h2><ul>';
+//         foreach ( $unique_hooks as $hook ) {
+//             echo '<li>' . esc_html($hook) . '</li>';
+//         }
+//         echo '</ul></div>';
+//     }, 1000);
+// }
