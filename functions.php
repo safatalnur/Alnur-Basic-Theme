@@ -41,6 +41,13 @@ function alnur_basic_theme_setup() {
 
 add_action('init', 'alnur_basic_theme_setup');
 
+// Add limit to the excerpt length
+function alnur_basic_custom_excerpt_length( $length ) {
+    return 25;
+}
+
+add_filter( 'excerpt_length', 'alnur_basic_custom_excerpt_length', 999);
+
 /*
     ==================
     ADebug and find out hook used on a page
