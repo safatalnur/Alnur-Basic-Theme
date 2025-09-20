@@ -29,6 +29,9 @@ wp-config.php
 # Uploads
 /wp-content/uploads/
 
+# Cache
+.sass-cache
+
 # Log files
 *.log
 
